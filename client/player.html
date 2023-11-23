@@ -37,7 +37,6 @@ div#amplitude-player {
     max-height: 715px; } }
 div#amplitude-left {
   padding: 0px;
-  border-right: 1px solid #CFD8DC;
   width: 50%;
   display: flex;
   flex-direction: column; }
@@ -672,6 +671,10 @@ div#large-visualization{
         display: none;
       }
 
+div#song-summary{
+  overflow: scroll;
+}
+
     </style>
   </head>
   <body>
@@ -740,7 +743,7 @@ div#large-visualization{
                   <span data-amplitude-song-info="album"></span>
                 </div>
                 <br>
-                <div class="song-summary">
+                <div id="song-summary">
                   <span data-amplitude-song-info="summary"></span>
                 </div>
               </div>
